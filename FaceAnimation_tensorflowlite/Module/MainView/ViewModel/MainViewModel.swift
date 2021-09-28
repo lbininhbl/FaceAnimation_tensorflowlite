@@ -29,21 +29,12 @@ class MainViewModel {
         image = BehaviorSubject<UIImage>(value: testImage)
         
         // 初始化列表
-        self.list = Observable<[String]>.just(["开始执行", "保存到相册"])
+        self.list = Observable<[String]>.just(["开始执行", "保存到相册", "重播"])
         
         self.execute = PublishSubject<String>()
     
-        
         self.video = Observable.combineLatest(execute, image)
             .filter { $0.0 == "开始执行" }
             .flatMap { faceAnimation.execute(image: $0.1) }
-        
-        self.execute
-            .filter({ $0 != "开始执行" })
-            .subscribe(onNext: { title in
-                print("点击了", title)
-            })
-            .disposed(by: bag)
-        
     }
 }
