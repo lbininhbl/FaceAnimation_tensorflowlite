@@ -91,5 +91,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 .DS_Store
-pytorch_model
+tfresource
 infer_pym.py
