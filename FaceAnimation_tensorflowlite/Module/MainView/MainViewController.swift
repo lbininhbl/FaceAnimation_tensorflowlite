@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Photos
 import NSObject_Rx
 
 class MainViewController: UIViewController, StoryboardInitializable {
@@ -67,14 +68,15 @@ class MainViewController: UIViewController, StoryboardInitializable {
 }
  
 private extension MainViewController {
+    
     func handle(title: String) {
         switch title {
         case "保存到相册":
-            guard let url = videoUrl else {
-                logInfo("没有可以保存的视频")
-                return
-            }
-            UISaveVideoAtPathToSavedPhotosAlbum(url.path, self, #selector(video(path:didFinishSaving:context:)), nil)
+            AlbumUtils.save(url: videoUrl).subscribe(onCompleted: {
+                self.logInfo("保存成功")
+            }, onError: { error in
+                self.logInfo("保存失败:" + error.localizedDescription)
+            }).disposed(by: rx.disposeBag)
         case "重播":
             guard let url = videoUrl else {
                 logInfo("没有可以播放的视频")
@@ -83,16 +85,6 @@ private extension MainViewController {
             PlayUtil.shared.play(url: url, on: self.imageView)
         default:
             break
-        }
-    }
-    
-    @objc func video(path: String?, didFinishSaving error: Error?, context: Any?) {
-        if let _ = path {
-            logInfo("保存成功")
-        }
-        
-        if let error = error {
-            logInfo("保存失败," + error.localizedDescription)
         }
     }
 }

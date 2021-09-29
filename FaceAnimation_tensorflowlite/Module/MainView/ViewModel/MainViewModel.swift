@@ -36,5 +36,6 @@ class MainViewModel {
         self.video = Observable.combineLatest(execute, image)
             .filter { $0.0 == "开始执行" }
             .flatMap { faceAnimation.execute(image: $0.1) }
+        
     }
 }

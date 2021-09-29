@@ -61,6 +61,7 @@
 		846BB63D27016BBB0040DEFA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BB63C27016BBB0040DEFA /* MainCoordinator.swift */; };
 		846BB640270172920040DEFA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BB63F270172920040DEFA /* MainViewModel.swift */; };
 		846BB6432701A9570040DEFA /* FaceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BB6422701A9570040DEFA /* FaceAnimation.swift */; };
+		846BB65827045C540040DEFA /* AlbumUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BB65727045C540040DEFA /* AlbumUtils.swift */; };
 		F7AB153CF3752307464790EF /* Pods_FaceAnimation_tensorflowlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4049D30AEE87222FB3623F47 /* Pods_FaceAnimation_tensorflowlite.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +127,7 @@
 		846BB63C27016BBB0040DEFA /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		846BB63F270172920040DEFA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		846BB6422701A9570040DEFA /* FaceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAnimation.swift; sourceTree = "<group>"; };
+		846BB65727045C540040DEFA /* AlbumUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumUtils.swift; sourceTree = "<group>"; };
 		C31B6B9B36DD3BB8FB2CC07D /* Pods-FaceAnimation_tensorflowlite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAnimation_tensorflowlite.release.xcconfig"; path = "Target Support Files/Pods-FaceAnimation_tensorflowlite/Pods-FaceAnimation_tensorflowlite.release.xcconfig"; sourceTree = "<group>"; };
 		DB49D964CCA492F06266EE56 /* Pods-FaceAnimation_tensorflowlite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAnimation_tensorflowlite.debug.xcconfig"; path = "Target Support Files/Pods-FaceAnimation_tensorflowlite/Pods-FaceAnimation_tensorflowlite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +230,7 @@
 				846BB61B2701694F0040DEFA /* FaceUtils.swift */,
 				846BB61C2701694F0040DEFA /* Path.swift */,
 				846BB61D2701694F0040DEFA /* PlayUtil.swift */,
+				846BB65727045C540040DEFA /* AlbumUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				846BB5E92701684A0040DEFA /* UIViewController+Extension.swift in Sources */,
 				846BB5D2270167260040DEFA /* MainViewController.swift in Sources */,
 				846BB63527016A170040DEFA /* Generator.swift in Sources */,
+				846BB65827045C540040DEFA /* AlbumUtils.swift in Sources */,
 				846BB6432701A9570040DEFA /* FaceAnimation.swift in Sources */,
 				846BB63627016A170040DEFA /* KPProcessor.swift in Sources */,
 				846BB640270172920040DEFA /* MainViewModel.swift in Sources */,
