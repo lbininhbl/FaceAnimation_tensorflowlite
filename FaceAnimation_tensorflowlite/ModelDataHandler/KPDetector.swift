@@ -30,7 +30,7 @@ class KPDetector: ModelDataHandler {
         
         do {
             var option = CoreMLDelegate.Options()
-            option.enabledDevices = .all
+            option.enabledDevices = .neuralEngine
             option.coreMLVersion = 3
             var delegate: Delegate? = CoreMLDelegate(options: option)
 
@@ -78,8 +78,8 @@ class KPDetector: ModelDataHandler {
             // 执行解析器
             try interpreter.invoke()
             
-            outputTensor1 = try interpreter.output(at: 0) // 是value [1, 10, 2]
-            outputTensor2 = try interpreter.output(at: 1) // 是jacobian [1, 10, 2, 2]
+            outputTensor1 = try interpreter.output(at: 1) // 是value [1, 10, 2]
+            outputTensor2 = try interpreter.output(at: 0) // 是jacobian [1, 10, 2, 2]
             
         } catch let error {
             print("执行解析器失败: ", error.localizedDescription)

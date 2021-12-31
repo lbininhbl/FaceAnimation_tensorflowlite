@@ -28,16 +28,8 @@
 		846BB5FF270169160040DEFA /* 229.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F1270169150040DEFA /* 229.jpg */; };
 		846BB600270169160040DEFA /* four-indian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F2270169150040DEFA /* four-indian.jpg */; };
 		846BB601270169160040DEFA /* ctf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F3270169150040DEFA /* ctf.jpg */; };
-		846BB602270169160040DEFA /* generator-389v2bs1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F5270169160040DEFA /* generator-389v2bs1.tflite */; };
-		846BB603270169160040DEFA /* kp_processor.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F6270169160040DEFA /* kp_processor.tflite */; };
-		846BB604270169160040DEFA /* kp_detector.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F7270169160040DEFA /* kp_detector.tflite */; };
-		846BB605270169160040DEFA /* generator_gpu.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F8270169160040DEFA /* generator_gpu.tflite */; };
-		846BB606270169160040DEFA /* kp_detector-L.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5F9270169160040DEFA /* kp_detector-L.tflite */; };
-		846BB607270169160040DEFA /* generator-L.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5FA270169160040DEFA /* generator-L.tflite */; };
 		846BB608270169160040DEFA /* face_detect_240_320_no_dilation_keep_input_1_output_confidences_boxes_21.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5FB270169160040DEFA /* face_detect_240_320_no_dilation_keep_input_1_output_confidences_boxes_21.tflite */; };
-		846BB609270169160040DEFA /* generator.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5FC270169160040DEFA /* generator.tflite */; };
 		846BB60A270169160040DEFA /* facial_keypoints_96_input_1_dense_2_BiasAdd_102pts_758.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5FD270169160040DEFA /* facial_keypoints_96_input_1_dense_2_BiasAdd_102pts_758.tflite */; };
-		846BB60B270169160040DEFA /* kp_processor_gpu.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 846BB5FE270169160040DEFA /* kp_processor_gpu.tflite */; };
 		846BB613270169330040DEFA /* myh-L-fps15.json in Resources */ = {isa = PBXBuildFile; fileRef = 846BB60D270169330040DEFA /* myh-L-fps15.json */; };
 		846BB614270169330040DEFA /* fusion_mask.json in Resources */ = {isa = PBXBuildFile; fileRef = 846BB60E270169330040DEFA /* fusion_mask.json */; };
 		846BB615270169330040DEFA /* myh-fps15.json in Resources */ = {isa = PBXBuildFile; fileRef = 846BB60F270169330040DEFA /* myh-fps15.json */; };
@@ -62,6 +54,12 @@
 		846BB640270172920040DEFA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BB63F270172920040DEFA /* MainViewModel.swift */; };
 		846BB6432701A9570040DEFA /* FaceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BB6422701A9570040DEFA /* FaceAnimation.swift */; };
 		846BB65827045C540040DEFA /* AlbumUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BB65727045C540040DEFA /* AlbumUtils.swift */; };
+		84D94C522732681800ED9906 /* kpprocessor.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 84D94C4F2732681700ED9906 /* kpprocessor.tflite */; };
+		84D94C532732681800ED9906 /* kp_detector.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 84D94C502732681700ED9906 /* kp_detector.tflite */; };
+		84D94C542732681800ED9906 /* generator.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 84D94C512732681700ED9906 /* generator.tflite */; };
+		84D94C5627326BF300ED9906 /* myh_fps_down-bd-fps15.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D94C5527326BF300ED9906 /* myh_fps_down-bd-fps15.json */; };
+		84D94C58273278B900ED9906 /* pd-myh_fps_down-fps15.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D94C57273278B900ED9906 /* pd-myh_fps_down-fps15.json */; };
+		84D94C5A2732835100ED9906 /* generator-bs1-smooth.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 84D94C592732835100ED9906 /* generator-bs1-smooth.tflite */; };
 		F7AB153CF3752307464790EF /* Pods_FaceAnimation_tensorflowlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4049D30AEE87222FB3623F47 /* Pods_FaceAnimation_tensorflowlite.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,16 +88,8 @@
 		846BB5F1270169150040DEFA /* 229.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 229.jpg; sourceTree = "<group>"; };
 		846BB5F2270169150040DEFA /* four-indian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "four-indian.jpg"; sourceTree = "<group>"; };
 		846BB5F3270169150040DEFA /* ctf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ctf.jpg; sourceTree = "<group>"; };
-		846BB5F5270169160040DEFA /* generator-389v2bs1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "generator-389v2bs1.tflite"; sourceTree = "<group>"; };
-		846BB5F6270169160040DEFA /* kp_processor.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kp_processor.tflite; sourceTree = "<group>"; };
-		846BB5F7270169160040DEFA /* kp_detector.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kp_detector.tflite; sourceTree = "<group>"; };
-		846BB5F8270169160040DEFA /* generator_gpu.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = generator_gpu.tflite; sourceTree = "<group>"; };
-		846BB5F9270169160040DEFA /* kp_detector-L.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kp_detector-L.tflite"; sourceTree = "<group>"; };
-		846BB5FA270169160040DEFA /* generator-L.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "generator-L.tflite"; sourceTree = "<group>"; };
 		846BB5FB270169160040DEFA /* face_detect_240_320_no_dilation_keep_input_1_output_confidences_boxes_21.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_detect_240_320_no_dilation_keep_input_1_output_confidences_boxes_21.tflite; sourceTree = "<group>"; };
-		846BB5FC270169160040DEFA /* generator.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = generator.tflite; sourceTree = "<group>"; };
 		846BB5FD270169160040DEFA /* facial_keypoints_96_input_1_dense_2_BiasAdd_102pts_758.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = facial_keypoints_96_input_1_dense_2_BiasAdd_102pts_758.tflite; sourceTree = "<group>"; };
-		846BB5FE270169160040DEFA /* kp_processor_gpu.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kp_processor_gpu.tflite; sourceTree = "<group>"; };
 		846BB60D270169330040DEFA /* myh-L-fps15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "myh-L-fps15.json"; sourceTree = "<group>"; };
 		846BB60E270169330040DEFA /* fusion_mask.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fusion_mask.json; sourceTree = "<group>"; };
 		846BB60F270169330040DEFA /* myh-fps15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "myh-fps15.json"; sourceTree = "<group>"; };
@@ -128,6 +118,12 @@
 		846BB63F270172920040DEFA /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		846BB6422701A9570040DEFA /* FaceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAnimation.swift; sourceTree = "<group>"; };
 		846BB65727045C540040DEFA /* AlbumUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumUtils.swift; sourceTree = "<group>"; };
+		84D94C4F2732681700ED9906 /* kpprocessor.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kpprocessor.tflite; sourceTree = "<group>"; };
+		84D94C502732681700ED9906 /* kp_detector.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = kp_detector.tflite; sourceTree = "<group>"; };
+		84D94C512732681700ED9906 /* generator.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = generator.tflite; sourceTree = "<group>"; };
+		84D94C5527326BF300ED9906 /* myh_fps_down-bd-fps15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "myh_fps_down-bd-fps15.json"; sourceTree = "<group>"; };
+		84D94C57273278B900ED9906 /* pd-myh_fps_down-fps15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pd-myh_fps_down-fps15.json"; sourceTree = "<group>"; };
+		84D94C592732835100ED9906 /* generator-bs1-smooth.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "generator-bs1-smooth.tflite"; sourceTree = "<group>"; };
 		C31B6B9B36DD3BB8FB2CC07D /* Pods-FaceAnimation_tensorflowlite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAnimation_tensorflowlite.release.xcconfig"; path = "Target Support Files/Pods-FaceAnimation_tensorflowlite/Pods-FaceAnimation_tensorflowlite.release.xcconfig"; sourceTree = "<group>"; };
 		DB49D964CCA492F06266EE56 /* Pods-FaceAnimation_tensorflowlite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAnimation_tensorflowlite.debug.xcconfig"; path = "Target Support Files/Pods-FaceAnimation_tensorflowlite/Pods-FaceAnimation_tensorflowlite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -288,16 +284,9 @@
 		846BB5F4270169160040DEFA /* tfmodels */ = {
 			isa = PBXGroup;
 			children = (
-				846BB5F5270169160040DEFA /* generator-389v2bs1.tflite */,
-				846BB5F6270169160040DEFA /* kp_processor.tflite */,
-				846BB5F7270169160040DEFA /* kp_detector.tflite */,
-				846BB5F8270169160040DEFA /* generator_gpu.tflite */,
-				846BB5F9270169160040DEFA /* kp_detector-L.tflite */,
-				846BB5FA270169160040DEFA /* generator-L.tflite */,
 				846BB5FB270169160040DEFA /* face_detect_240_320_no_dilation_keep_input_1_output_confidences_boxes_21.tflite */,
-				846BB5FC270169160040DEFA /* generator.tflite */,
 				846BB5FD270169160040DEFA /* facial_keypoints_96_input_1_dense_2_BiasAdd_102pts_758.tflite */,
-				846BB5FE270169160040DEFA /* kp_processor_gpu.tflite */,
+				84D94C4E2732681700ED9906 /* pd149 */,
 			);
 			path = tfmodels;
 			sourceTree = "<group>";
@@ -305,6 +294,8 @@
 		846BB60C270169330040DEFA /* support_materials */ = {
 			isa = PBXGroup;
 			children = (
+				84D94C57273278B900ED9906 /* pd-myh_fps_down-fps15.json */,
+				84D94C5527326BF300ED9906 /* myh_fps_down-bd-fps15.json */,
 				846BB60D270169330040DEFA /* myh-L-fps15.json */,
 				846BB60E270169330040DEFA /* fusion_mask.json */,
 				846BB60F270169330040DEFA /* myh-fps15.json */,
@@ -363,6 +354,17 @@
 				846BB6422701A9570040DEFA /* FaceAnimation.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		84D94C4E2732681700ED9906 /* pd149 */ = {
+			isa = PBXGroup;
+			children = (
+				84D94C4F2732681700ED9906 /* kpprocessor.tflite */,
+				84D94C502732681700ED9906 /* kp_detector.tflite */,
+				84D94C512732681700ED9906 /* generator.tflite */,
+				84D94C592732835100ED9906 /* generator-bs1-smooth.tflite */,
+			);
+			path = pd149;
 			sourceTree = "<group>";
 		};
 		DD977D8BCD23E3266CE76214 /* Frameworks */ = {
@@ -441,27 +443,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846BB604270169160040DEFA /* kp_detector.tflite in Resources */,
-				846BB609270169160040DEFA /* generator.tflite in Resources */,
-				846BB60B270169160040DEFA /* kp_processor_gpu.tflite in Resources */,
+				84D94C5627326BF300ED9906 /* myh_fps_down-bd-fps15.json in Resources */,
+				84D94C542732681800ED9906 /* generator.tflite in Resources */,
 				846BB613270169330040DEFA /* myh-L-fps15.json in Resources */,
 				846BB5C6270164300040DEFA /* LaunchScreen.storyboard in Resources */,
 				846BB60A270169160040DEFA /* facial_keypoints_96_input_1_dense_2_BiasAdd_102pts_758.tflite in Resources */,
+				84D94C532732681800ED9906 /* kp_detector.tflite in Resources */,
 				846BB5C3270164300040DEFA /* Assets.xcassets in Resources */,
-				846BB602270169160040DEFA /* generator-389v2bs1.tflite in Resources */,
-				846BB607270169160040DEFA /* generator-L.tflite in Resources */,
-				846BB605270169160040DEFA /* generator_gpu.tflite in Resources */,
 				846BB616270169330040DEFA /* male_std-landmarks.json in Resources */,
-				846BB603270169160040DEFA /* kp_processor.tflite in Resources */,
 				846BB614270169330040DEFA /* fusion_mask.json in Resources */,
+				84D94C58273278B900ED9906 /* pd-myh_fps_down-fps15.json in Resources */,
+				84D94C522732681800ED9906 /* kpprocessor.tflite in Resources */,
 				846BB615270169330040DEFA /* myh-fps15.json in Resources */,
 				846BB618270169330040DEFA /* ref2-fps15.json in Resources */,
 				846BB5C12701642E0040DEFA /* Main.storyboard in Resources */,
 				846BB617270169330040DEFA /* myh-fps15.mp3 in Resources */,
 				846BB601270169160040DEFA /* ctf.jpg in Resources */,
 				846BB608270169160040DEFA /* face_detect_240_320_no_dilation_keep_input_1_output_confidences_boxes_21.tflite in Resources */,
-				846BB606270169160040DEFA /* kp_detector-L.tflite in Resources */,
 				846BB600270169160040DEFA /* four-indian.jpg in Resources */,
+				84D94C5A2732835100ED9906 /* generator-bs1-smooth.tflite in Resources */,
 				846BB5FF270169160040DEFA /* 229.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,6 +696,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KNJF5GGQB;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/FaceAnimation_tensorflowlite/OpenCVWrapper/PrefixHeader.pch";
 				INFOPLIST_FILE = FaceAnimation_tensorflowlite/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -718,6 +719,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KNJF5GGQB;
 				GCC_PREFIX_HEADER = "${PROJECT_DIR}/FaceAnimation_tensorflowlite/OpenCVWrapper/PrefixHeader.pch";
 				INFOPLIST_FILE = FaceAnimation_tensorflowlite/Resource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -20,17 +20,11 @@ struct TFLiteModel {
     
     static var faceKeypoint: Self { .init(name: "facial_keypoints_96_input_1_dense_2_BiasAdd_102pts_758") }
     
-//    static var generator: Self { .init(name: "generator") }
-    static var generator: Self { .init(name: "generator-L") }
-//    static var generator: Self { .init(name: "generator_gpu") }
-//    static var generator: Self { .init(name: "generator-389v2bs1") }
+    static var generator: Self { .init(name: "generator") }
     
-    
-//    static var kp_detect: Self { .init(name: "kp_detector") }
-    static var kp_detect: Self { .init(name: "kp_detector-L") }
-    
-    static var kp_process: Self { .init(name: "kp_processor") }
-//    static var kp_process: Self { .init(name: "kp_processor_gpu") }
+    static var kp_detect: Self { .init(name: "kp_detector") }
+
+    static var kp_process: Self { .init(name: "kpprocessor") }
 }
 
 enum NormalizeRange {

@@ -134,17 +134,22 @@ using namespace cv;
             Mat pred = [self getMatFromArray:predArr];
             [FATimeUtil end:@"pred 转 Mat" log:YES];
             
-            
-            [FATimeUtil begin:@"fuse 公式"];
-            Mat n(fusion_mask.rows, fusion_mask.cols, fusion_mask.type(), Scalar(1, 1, 1, 1));
-            Mat fuse_pred = fusion_mask.mul(pred) + (n - fusion_mask).mul(alignedFace0);
-            [FATimeUtil end:@"fuse 公式" log:YES];
-            
             [FATimeUtil begin:@"格式转换"];
             Mat fuse_pred_uint8;
-            fuse_pred = fuse_pred * 255;
-            fuse_pred.convertTo(fuse_pred_uint8, CV_8UC4);
+            pred = pred * 255;
+            pred.convertTo(fuse_pred_uint8, CV_8UC4);
             [FATimeUtil end:@"格式转换" log:YES];
+            
+//            [FATimeUtil begin:@"fuse 公式"];
+//            Mat n(fusion_mask.rows, fusion_mask.cols, fusion_mask.type(), Scalar(1, 1, 1, 1));
+//            Mat fuse_pred = fusion_mask.mul(pred) + (n - fusion_mask).mul(alignedFace0);
+//            [FATimeUtil end:@"fuse 公式" log:YES];
+            
+//            [FATimeUtil begin:@"格式转换"];
+//            Mat fuse_pred_uint8;
+//            fuse_pred = fuse_pred * 255;
+//            fuse_pred.convertTo(fuse_pred_uint8, CV_8UC4);
+//            [FATimeUtil end:@"格式转换" log:YES];
             
             [FATimeUtil begin:@"warp"];
             warpAffine(fuse_pred_uint8, imgMat, _inv_mat, Size2i(sourceImage.size.width, sourceImage.size.height), INTER_LINEAR, BORDER_TRANSPARENT);

@@ -17,8 +17,8 @@ struct FaceAnimation {
     
     init() {
         // 初始化需要的数据
-//        let driving_kp_name = "myh-fps15"
-        let driving_kp_name = "myh-L-fps15"
+        let driving_kp_name = "pd-myh_fps_down-fps15"
+//        let driving_kp_name = "myh-L-fps15"
         let fusion_mask_name = "fusion_mask"
         let stdFace_name = "male_std-landmarks"
         
